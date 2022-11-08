@@ -1,0 +1,11 @@
+defaults:
+  - dmanus: dmanus_pos
+  - policy: upright_grasp
+  - sensing: reskin
+  - _self_
+
+dmanus:
+  ee_cfg:
+    dynamixel:
+      active_motors: ${policy.active_motors}
+      reset_pos: ${policy.default_pos}
